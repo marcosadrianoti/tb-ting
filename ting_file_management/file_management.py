@@ -11,7 +11,7 @@ def txt_importer(path_file):
         with open(path_file, 'r') as file:
             for line in file:
                 txt_list.append(line.rstrip("\n"))
-                queue.enqueue
+                # queue.enqueue
     except FileNotFoundError:
         print(f'Arquivo {path_file} não encontrado', file=sys.stderr)
     else:
