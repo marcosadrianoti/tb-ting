@@ -1,6 +1,39 @@
 import pytest
 from ting_file_management.priority_queue import PriorityQueue
-from tests.priority_queue.mocks import mock_list
+# from tests.priority_queue.mocks import mock_list
+
+mock_list = [
+    {
+        "nome_do_arquivo": "c:/9.txt",
+        "linhas_do_arquivo": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        "qtd_linhas": 9,
+    },
+    {
+        "nome_do_arquivo": "c:/4.txt",
+        "linhas_do_arquivo": ["1", "2", "3", "4"],
+        "qtd_linhas": 4,
+    },
+    {
+        "nome_do_arquivo": "c:/2.txt",
+        "linhas_do_arquivo": ["1", "2"],
+        "qtd_linhas": 2,
+    },
+    {
+        "nome_do_arquivo": "c:/5.txt",
+        "linhas_do_arquivo": ["1", "2", "3", "4", "5"],
+        "qtd_linhas": 5,
+    },
+    {
+        "nome_do_arquivo": "c:/7.txt",
+        "linhas_do_arquivo": ["1", "2", "3", "4", "5", "6", "7"],
+        "qtd_linhas": 7,
+    },
+    {
+        "nome_do_arquivo": "c:/3.txt",
+        "linhas_do_arquivo": ["1", "2", "3"],
+        "qtd_linhas": 3,
+    }
+]
 
 
 def test_basic_priority_queueing():
