@@ -16,7 +16,6 @@ class Queue(AbstractQueue):
         return self.__data.remove_first()
 
     def search(self, index):
-        print('----->', index, len(self.__data))
         if 0 <= index <= len(self.__data) - 1:
             return self.__data.get_element_at(index)
         else:
