@@ -20,3 +20,6 @@ class Queue(AbstractQueue):
             return self.__data.get_element_at(index)
         else:
             raise IndexError("Índice Inválido ou Inexistente")
+
+    def __str__(self):
+        return str(self.__data)

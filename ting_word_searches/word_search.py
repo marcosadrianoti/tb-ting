@@ -1,22 +1,19 @@
 def exists_word(word, instance):
     queue = instance
-    # {
-    #     "nome_do_arquivo": "c:/9.txt",
-    #     "linhas_do_arquivo": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-    #     "qtd_linhas": 9,
-    # }
     final_list = []
-    for i in range(0, len(queue) - 1):  # lista principal
-        ocorrencias = []
-        for j in range(0, queue[i]['qtd_linhas'] - 1):  # lista de linhas
-            text_list = queue[i]['linhas_do_arquivo'][j].lower().split()
+    for i in range(len(queue)):
+        unic_elem = queue.search(i)
+        occurrences = []
+        for j in range(unic_elem['qtd_linhas']):  # lista de linhas
+            linhas = unic_elem['linhas_do_arquivo'][j]
+            text_list = linhas.lower().rstrip('.').split()
             if word in text_list:
-                ocorrencias.append({'linha': j + 1})
-        if ocorrencias:
+                occurrences.append({'linha': j + 1})
+        if occurrences:
             final_list.append({
                 "palavra": word,
-                "arquivo": queue[i]['nome_do_arquivo'],
-                "ocorrencias": ocorrencias
+                "arquivo": unic_elem['nome_do_arquivo'],
+                "ocorrencias": occurrences
                 })
 
     return final_list
