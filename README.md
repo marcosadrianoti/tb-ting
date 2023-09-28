@@ -4,14 +4,12 @@ Projeto desenvolvido por mim durante o curso de Desenvolvimento Web na Trybe. Di
 <details>
 <summary><strong>Objetivos do projeto:</strong></summary>
  
-  * Resolver problemas e otimizar algoritmos desenvolvendo a capacidade de implementar soluções.
+  * Implementar um programa que simule um algoritmo de indexação de documentos similar ao do Google. Seu programa deverá ser capaz de identificar ocorrências de termos em arquivos TXT.
   * Verificar se eu era capaz de:
-    * Exercitar lógica.
-    * Interpretar problemas.
-    * Interpretar um código legado.
-    * Otimizar a resolução de problemas.
-    * Resolver problemas/Otimizar algoritmos sob pressão.
-    * Identificar a complecidade do algorítimo.
+    * Manipular Pilhas.
+    * Manipular Deque.
+    * Manipular Nó & Listas Ligadas.
+    * Manipular Listas Duplamente Ligadas.
 </details>
 <details>
 <summary><strong> Requisitos do projeto:</strong></summary>
