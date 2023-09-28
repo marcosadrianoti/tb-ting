@@ -38,13 +38,13 @@ cd meu-diretorio
 Clone o projeto com o comando `git clone`:
 
 ```bash
-git clone git@github.com:marcosadrianoti/tb-algorithms.git
+git clone git@github.com:marcosadrianoti/tb-ting.git
 ```
 
 Acesse o diretório do projeto com o comando `cd`:
 
 ```bash
-cd tb-algorithms
+cd tb-ting
 ```
 
 crie o ambiente virtual:
